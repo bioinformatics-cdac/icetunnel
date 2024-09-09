@@ -1,5 +1,5 @@
 #!/bin/sh
 
-mkdir -p /var/log/wstun
-touch /var/log/wstun/wstun.log
-echo "WSTUN logging set."
+mkdir -p /var/log/ice
+touch /var/log/ice/icetunnel.log
+echo "icetunnel logging set."

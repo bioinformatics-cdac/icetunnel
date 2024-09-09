@@ -1,5 +1,5 @@
 [Unit]
-Description=wstun
+Description=icetunnel
 After=network.target
 
 [Service]
@@ -10,8 +10,7 @@ StandardInput=null
 StandardOutput=journal
 StandardError=journal
 Environment="NODE_PATH=/usr/lib/node_modules"
-ExecStart=/usr/bin/wstun -r -s 8080 --ssl=false
-#ExecStart=/usr/bin/wstun -r -s 8080 --ssl=true --key="<KEY>" --cert="<CERT>"
+ExecStart=/usr/bin/icetunnel -r -s 8080 --ssl=false
 Restart=always
 
 [Install]

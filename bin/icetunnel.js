@@ -23,7 +23,7 @@ log4js = require('log4js');
 
 try{
     log4js.loadAppender('file');
-    logfile = '/var/log/wstun/wstun.log';
+    logfile = '/var/log/ice/icetunnel.log';
     loglevel = 'debug';
     log4js.addAppender(log4js.appenders.file(logfile));
 }
@@ -39,7 +39,7 @@ var portTunnel , argv, client, host, localport, optimist, port, server, wsHost, 
 var _ = require("under_score");
 
 optimist = require('optimist').usage("Tunnels and reverse tunnels over WebSocket.\n" +
-    "\nUsage: https://github.com/MDSLab/wstun/blob/master/readme.md")
+    "\nUsage: https://github.com:bioinformatics-cdac/icetunnel/blob/master/readme.md")
     .string("s").alias('s', "server").describe('s', 'run as server, specify listening port')
     .string("t").alias('t', "tunnel").describe('t', 'run as tunnel client, specify localport:host:port')
     .boolean("r").alias('r', "reverse").describe('r', 'run in reverse tunneling mode')

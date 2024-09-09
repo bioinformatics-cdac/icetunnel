@@ -1,6 +1,6 @@
 {
-  "name": "@mdslab/wstun",
-  "version": "1.1.0",
+  "name": "@bioinformatics-cdac/icetunnel",
+  "version": "1.2.2",
   "description": "A set of tools to establish TCP tunnels (or TCP reverse tunnels) over WebSocket connections for circumventing the problem of directly connect to hosts behind a strict firewall or without public IP. It also supports WebSocket Secure (wss) connections.",
   "main": "index.js",
   "scripts": {
@@ -16,26 +16,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MDSLab/wstun.git"
+    "url": "git@github.com:bioinformatics-cdac/icetunnel.git"
   },
   "keywords": [
     "tunnel",
     "reverse",
     "WebSocket"
   ],
-  "author": "Nicola Peditto <npeditto@unime.it>",
+  "author": "ice <ice@cdac.in>",
   "contributors": [
-    "Dario Bruneo <dbruneo@unime.it>",
-    "Francesco Longo <flongo@unime.it>",
-    "Giovanni Merlino <gmerlino@unime.it>",
-    "Andrea Rocco Lotronto <andrealotronto@gmail.com>"
+   
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/MDSLab/wstun/issues"
+    "url": "https://github.com:bioinformatics-cdac/icetunnel/issues"
   },
-  "homepage": "https://github.com/MDSLab/wstun",
+  "homepage": "https://github.com:bioinformatics-cdac/icetunnel",
   "bin": {
-    "wstun": "./bin/wstun.js"
+    "icetunnel": "./bin/icetunnel.js"
   }
 }
