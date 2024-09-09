@@ -6,7 +6,7 @@ A set of Node.js tools to establish TCP tunnels (or TCP reverse tunnels) over We
 
 ## Installation
 ```
-npm install @bioinformatics-cdac/icetunnel
+npm install -g  @bioinformatics-cdac/icetunnel
 ```
 
 ## Usage (from command line)
@@ -23,7 +23,7 @@ Examples about how to run a tunnel server:
 Examples about how to run a tunnel client:
 ```
 //without security
-./icetunnel -t 33:2.2.2.2:33 ws://iceserverIP:443 
+./icetunnel -t 33:2.2.2.2:33 ws://iceserverIP:8080 
 
 //with security
 ./icetunnel -t 33:2.2.2.2:33 wss://iceserverIP:8080
@@ -41,10 +41,10 @@ Examples about how to run a tunnel server locking the final tunnel destination:
 Examples about how to run a tunnel client when the final tunnel destination has been locked by the server:
 ```
 //without security
-./icetunnel -t 33 ws://iceserverIP:443 
+./icetunnel -t 33 ws://iceserverIP:8080 
 
 //with security
-./icetunnel -t 33 wss://iceserverIP:443
+./icetunnel -t 33 wss://iceserverIP:8080
 ```
 
 Examples about how to run a reverse tunnel server:
